@@ -1,0 +1,113 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #0c1c31;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+#allSubtitle {
+    max-width: 80%;
+    display: flex;
+    font-size: 200%;
+    margin-bottom: 30px;
+}
+
+#subtitle {
+    color: rgb(167, 167, 167);
+}
+
+#ligne {
+    height: 20px;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(110, 115, 131);
+    width: 300px;
+}
+
+#ligneAbout {
+    height: 20px;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(110, 115, 131);
+    width: 300px;
+}
+
+#titleNumber {
+    padding-top: 1%;
+    font-family: monospace;
+    color: #53d3b9;
+}
+
+@keyframes transitionOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes transitionleft {
+    0% {
+        margin-right: 70px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes transitionRight {
+    0% {
+        margin-left: 70px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes transitionTop {
+    0% {
+        margin-bottom: 70px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes transitionBottom {
+    0% {
+        margin-top: 70px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@media all and (max-width : 1050px) {
+    #ligneAbout {
+        display: none;
+    }
+}
+
+
+@media all and (max-width: 920px) {
+    #ligne {
+        display: none;
+    }
+}
